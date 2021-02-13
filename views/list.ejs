@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+
+        <h1 class="box" id="heading"> XMEME </h1>
+
+       
+            <form  action="/" method="POST">
+                 <label >Title</label>
+                <input  type="text" name="a" autocomplete="off" >
+                <br/>
+                <label>Caption</label>
+               <textarea name="b" id="" cols="30" rows="5" autocomplete="off"></textarea>
+                <br/>
+                <label >Image URL</label>
+                <input class="URL" type="url" name="c" autocomplete="off">
+                <br/>
+        
+        
+                <button type="submit">+</button>
+        
+            </form>
+        
+        
+             <%  memes.slice().reverse().forEach(function(meme){ %>
+                   <div class="box">
+                    <h1 class="item"> <%=meme.title%></h1>
+                    <p class="item"> <%=meme.caption %></p>
+                    <img  src= <%=meme.imageUrl%> >
+                   </div>
+                  
+               
+           
+                 
+            <% }); %>
+        
+        
+        
+     
+    
+
+     
+    </body>
+</html>
