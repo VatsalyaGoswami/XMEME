@@ -13,7 +13,7 @@
 
         <h1 class="box" id="heading"> XMEME </h1>
 
-       
+       <!-- taking input from user -->
             <form  action="/" method="POST">
                  <label >Title</label>
                 <input  type="text" name="a" autocomplete="off" >
@@ -25,12 +25,11 @@
                 <input class="URL" type="url" name="c" autocomplete="off">
                 <br/>
         
-        
                 <button type="submit">+</button>
         
             </form>
         
-        
+          <!-- printing the inputs stored in an array in reverse order -->
              <%  memes.slice().reverse().forEach(function(meme){ %>
                    <div class="box">
                     <h1 class="item"> <%=meme.title%></h1>
