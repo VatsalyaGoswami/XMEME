@@ -1,6 +1,10 @@
 #!/bin/bash
 
-# Setup DB or any other environment variables you want to setup.
-# sudo systemctl start mongodb
-npm install
+# activate nvm
+. ~/.nvm/nvm.sh
+
+# install dependencies
+npm install 
+
+# start the application
 node app.js

@@ -77,7 +77,7 @@ app.route("/memes/:idmeme")
   });
 })
 .patch(function(req,res){
-  Meme.updateOne(
+  Meme.update(
    { _id:req.params.idmeme},
    {$set:req.body},
 
