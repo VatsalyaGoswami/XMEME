@@ -17,8 +17,7 @@ sudo apt install -y mongodb-org
 #start MongoDB
 sudo systemctl start mongod
 
-# display MongoDB running status
-sudo systemctl status mongod
+
 
 # make mongodb as a service and restart on reboots
 sudo systemctl enable mongod
